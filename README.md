@@ -102,11 +102,11 @@ This utility allows to read a music structure in your file system, and create a 
   
   * SQLite Database
     
-    Table format: artist text, album text, track text
+    Table format: `artist text, album text, track text`
 
   * CVS
   
-    Format: artist, album, track
+    Format: `artist, album, track`
 
   * JSON in Music List format
   
