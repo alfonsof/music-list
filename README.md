@@ -97,48 +97,48 @@ Parameters:
   
   1. Read the music directory.
 
-    Example of directory:
+     Example of directory:
 
-    ```bash
-    music/
-    │
-    ├── artist_1
-    │   ├── album_1_1/
-    │   │   ├── track_1_1_1
-    │   │   ├── track_1_1_2
-    │   │   └── track_1_1_3
-    │   │
-    │   └── album_1_2/
-    │       ├── track_1_2_1
-    │       └── track_1_2_2
-    │ 
-    ├── artist_2/
-    │   ├── album_2_1/
-    │   │   ├── track_2_1_1
-    │   │   └── track_2_1_2
-    │   │
-    │   └── album_2_2/
-    │       ├── track_2_2_1
-    │       └── track_2_2_2
-    │
-    └── artist_3/
-        └── lbum_3_1/
-            ├── track_3_1_1
-            └── track_3_1_2
-    ```
+     ```bash
+     music/
+     │
+     ├── artist_1
+     │   ├── album_1_1/
+     │   │   ├── track_1_1_1
+     │   │   ├── track_1_1_2
+     │   │   └── track_1_1_3
+     │   │
+     │   └── album_1_2/
+     │       ├── track_1_2_1
+     │       └── track_1_2_2
+     │ 
+     ├── artist_2/
+     │   ├── album_2_1/
+     │   │   ├── track_2_1_1
+     │   │   └── track_2_1_2
+     │   │
+     │   └── album_2_2/
+     │       ├── track_2_2_1
+     │       └── track_2_2_2
+     │
+     └── artist_3/
+         └── lbum_3_1/
+             ├── track_3_1_1
+             └── track_3_1_2
+     ```
   2. Load the music list in memory `dict_artists`.
 
-    Example of structure used:
+     Example of structure used:
 
-    ```bash
-    dict_artists = 
-    {'artist-1': {'album-1_1': ['track-1_1_1', 'track-1_1_2', 'track-1_1_3'] ,
-                  'album-1_2': ['track-1_2_1', 'track-1_2_2']},
-     'artist-2': {'album-2_1': ['track-2_1_1', 'track-2_1_2'],
-                  'album-2_2': ['track-2_2_1', 'track-2_2_2']},
-     'artist-3': {'album-3_1': ['track-3_1_1', 'track-3_1_2']}
-    }
-    ```
+     ```bash
+     dict_artists = 
+     {'artist-1': {'album-1_1': ['track-1_1_1', 'track-1_1_2', 'track-1_1_3'],
+                   'album-1_2': ['track-1_2_1', 'track-1_2_2']},
+      'artist-2': {'album-2_1': ['track-2_1_1', 'track-2_1_2'],
+                   'album-2_2': ['track-2_2_1', 'track-2_2_2']},
+      'artist-3': {'album-3_1': ['track-3_1_1', 'track-3_1_2']}
+     }
+     ```
 
   3. Save the music list information in a file in the format selected.
 
