@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# Mac
+.DS_Store
+
+# Sonar scanner
+.scannerwork
+.sonar
