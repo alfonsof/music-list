@@ -28,9 +28,9 @@ def db_list(db_name):
     if os.path.exists(db_name):
         # Connect to DB
         conn = sqlite3.connect(db_name)
-        #conn.text_factory = str
         c = conn.cursor()
         c.execute('PRAGMA encoding = "UTF-8";')
+
         # Get rows of data
         c.execute("SELECT * FROM music")
         rows = c.fetchall()
@@ -165,10 +165,7 @@ def xml_list(xml_name):
     """
     if os.path.exists(xml_name):
         tree = ET.parse(xml_name)
-        #print(tree)
         root = tree.getroot()
-        #print(root.tag)
-        #print(root.attrib)
         print('Format: ' + root.attrib['format'])
         print('')
         format = root.attrib['format']

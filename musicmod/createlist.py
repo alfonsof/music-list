@@ -184,8 +184,6 @@ def db_list(db_name):
 
     # Create and connect to DB
     conn = sqlite3.connect(db_name)
-    #conn.text_factory = str
-    
     c = conn.cursor()
     c.execute('PRAGMA encoding = "UTF-8";')
     
