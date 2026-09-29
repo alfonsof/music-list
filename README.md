@@ -15,7 +15,82 @@ This utility allows to read a music structure in your file system, and create a 
 
 ## Requirements
 
-* The code was written for Python 3.
+* You must have the following installed:
+  * Python 3
+
+* The code was written for:
+  * Python 3
+
+## Use a Virtual Environment
+
+A Python environment is a self-contained directory that includes a specific version of Python and a set of installed packages. It is recommended using Python virtual environments for each project.
+
+1. Create a virtual environment
+
+  Open your terminal and run:
+
+  ```bash
+  python -m venv myenv
+  ```
+
+  This creates a folder named myenv containing the environment.
+
+1. Activate the environment
+
+ On Windows:
+
+ ```bash
+ myenv\Scripts\activate
+ ```
+
+ On macOS/Linux:
+
+ ```bash
+ source myenv/bin/activate
+ ```
+
+ Once activated, your terminal will show the environment name, like this:
+
+ ```bash
+ (myenv) $
+ ```
+
+1. Install packages inside the environment
+
+ Now you can install packages without affecting your global Python setup:
+
+ ```bash
+ pip install requests
+ ```
+
+1. Deactivate the environment
+
+ When you're done, simply run:
+
+ ```bash
+ deactivate
+ ```
+
+## Install library packages
+
+Install the specified python packages.
+
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+On the other hand, you can install individual library packages on a per-project basis depending on your needs.
+
+The list of individual library package that the application uses:
+
+* `mutagen`
+
+  Read and write audio tags for many formats.
+
+    ```bash
+    pip install mutagen
+    ```
+
 
 ## Using the utility
 
